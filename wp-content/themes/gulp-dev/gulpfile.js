@@ -61,10 +61,10 @@ gulp.task('watch', function() {
         proxy: 'localhost',
         port: 8080
     });
-    //gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
-    //gulp.watch(js + '**/*.js', ['javascript']);
-    //gulp.watch(img + 'RAW/**/*.{jpg,JPG,png}', ['images']);
-    //gulp.watch(root + '**/*').on('change', browserSync.reload);
+    gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
+    gulp.watch(js + '**/*.js', ['javascript']);
+    gulp.watch(img + 'RAW/**/*.{jpg,JPG,png}', ['images']);
+    gulp.watch(root + '**/*').on('change', browserSync.reload);
 });
 
 
