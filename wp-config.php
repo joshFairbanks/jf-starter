@@ -17,7 +17,9 @@
  *
  * @package WordPress
  */
-
+error_reporting(E_ALL); ini_set('display_errors', 1);
+ 
+define( 'WP_DEBUG', true);
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'jf-starter');
