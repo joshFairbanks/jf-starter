@@ -1,18 +1,16 @@
-$vollkorn:  'Vollkorn SC', serif;
-$barlow: 'Barlow', sans-serif;
-
-//NOTE: GET YOUR FONTS WORKING
-
 body,
 button,
 input,
 select,
-optgroup,
 textarea {
 	color: $color__text-main;
-	font-family: $vollkorn;
-	@include font-size(1);
+	font-family: $font__serif;
+	@include font-size(.9);
 	line-height: $font__line-height-body;
+	
+	@media screen and (min-width: $query__small) {
+		@include font-size(1);
+	}
 }
 
 @import "headings";
